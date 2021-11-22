@@ -95,3 +95,6 @@ For this edit the file .timer and change the line **OnCalendar=hourly** with **O
    OnCalendar=*-*-* 00,12:00:00
    Persistent=true
    ```
+   > Remeber to run `sudo systemctl daemon-reload` after update the file.
+
+
