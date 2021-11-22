@@ -92,6 +92,6 @@ For this edit the file .timer and change the line **OnCalendar=hourly** with **O
 > WantedBy=timers.target
 > 
 > [Timer]
-> **OnCalendar=\*-\*-\* 00,12:00:00**
+> OnCalendar=*-*-* 00,12:00:00
 > Persistent=true
 > ```
