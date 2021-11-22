@@ -84,12 +84,14 @@ This script/daemon will help you to update the IP in DNS record in Cloudflare us
 
 For this edit the file .timer and change the line **OnCalendar=hourly** with **OnCalendar=\*-\*-\* 00,12:00:00**
 
+> ```bash
 > [Unit]
 > Description=Run update-ip-cf hourly
->
+> 
 > [Install]
 > WantedBy=timers.target
->
+> 
 > [Timer]
 > **OnCalendar=\*-\*-\* 00,12:00:00**
 > Persistent=true
+> ```
