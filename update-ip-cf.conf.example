@@ -1,0 +1,14 @@
+# Your AUTH-KEY from CF
+AUTH_KEY="<your_key_here>"
+# Email associated with your CF account
+AUTH_EMAIL="<your_email>"
+# ZONE ID where the record is
+ZONE_ID="<the_zone_ID_as_in_your_cf_dashboard>"
+# Record ID returned by the API https://api.cloudflare.com/#dns-records-for-a-zone-list-dns-records
+RECORD_ID="<id_field_associated_to_the_record>"
+# Type of the record (CNAME/A/...)
+TYPE="A"
+# Name of the record to update is requiered by the API as you can update it also
+NAME="<name_in_the_record_you_want_to_update>"
+## Last known IP, or blank and it will be updated
+LAST_IP=0.0.0.0 # could be 0.0.0.0 to start and it will be update

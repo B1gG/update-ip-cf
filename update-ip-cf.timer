@@ -1,0 +1,9 @@
+[Unit]
+Description=Run update-ip-cf hourly
+
+[Install]
+WantedBy=timers.target
+
+[Timer]
+OnCalendar=hourly
+Persistent=true

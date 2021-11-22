@@ -1,0 +1,9 @@
+[Unit]
+Description=Update the external IP of the server in Cloudflare via API calls
+After=network.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/etc/update-ip-cf
+ExecStart=/etc/update-ip-cf/update-ip-cf.sh
+
