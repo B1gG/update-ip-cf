@@ -72,9 +72,9 @@ This script/daemon will help you to update the IP in DNS record in Cloudflare us
 
    > You can check more details about each time it runs with `sudo journalctl --unit update-ip-cf.service`
 
-10. Enable the schedule timer for the task with sudo systemctl enable update-ip-cf.timer
+10. Enable the schedule timer for the task with `sudo systemctl enable update-ip-cf.timer`
 
-11. Start the timer with sudo systemctl start update-ip-cf.timer
+11. Start the timer with sudo `systemctl start update-ip-cf.timer`
 
    > You can check all the timers in the system with `sudo systemctl list-timers`
 
