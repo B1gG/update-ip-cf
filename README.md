@@ -44,11 +44,11 @@ This script/daemon will help you to update the IP in DNS record in Cloudflare us
 
 3. Make sure the file **update-ip-cf.sh** is executable, with `chmod +x update-ip-cf.sh`
 
-4. Now test the script with `./update-ip-cf.sh`. You can use the script as is in a cron job, but if you just want to forget about this and make it run as part of **systemd**  follow the new steps.
+4. Now test the script with `./update-ip-cf.sh`. You can use the script as is in a cron job, but if you just want to forget about this and make it run as part of **systemd**  follow the next steps.
 
 5. Create a directory in **/etc** named as  **update-ip-cf** with `sudo mkdir /etc/update-ip-cf`
 
-6. Move the **.sh** and **.conf** files there with `sudo mv update-ip-cf.sh update-ip-cf.config -t /etc/update-ip-cf`
+6. Move the **.sh** and **.conf** files there with `sudo mv update-ip-cf.sh update-ip-cf.conf -t /etc/update-ip-cf`
 
 7. Move the **.service** and **.timer** files to the **systemd/system** folder, as:
 
